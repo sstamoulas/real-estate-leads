@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Georgia Stavrou Rentals, owned by Georgia Stavrou and affiliated with Coldwell Banker, serves Baltimore City, Baltimore County, Harford County, Cecil County, and Howard County."
+    />
+    <meta name="theme-color" content="#121715" />
+    <title>Georgia Stavrou Rentals | Coldwell Banker Rental Leads</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="site-config.js"></script>
+    <script defer src="script.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Georgia Stavrou Rentals",
+        "description": "Rental-focused real estate lead generation and property marketing with Coldwell Banker.",
+        "alternateName": "Georgia Stavrou",
+        "founder": {
+          "@type": "Person",
+          "name": "Georgia Stavrou"
+        },
+        "areaServed": [
+          "Baltimore City",
+          "Baltimore County",
+          "Harford County",
+          "Cecil County",
+          "Howard County"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Coldwell Banker"
+        },
+        "serviceType": [
+          "Rental lead generation",
+          "Tenant inquiry capture",
+          "Property marketing",
+          "Lease-up support"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Georgia Stavrou Rentals home">
+        <span class="brand-mark" aria-hidden="true">
+          <img class="brand-mark-icon" src="favicon.svg" alt="" />
+        </span>
+        <span class="brand-copy">
+          <strong data-brand-name>Georgia Stavrou Rentals</strong>
+          <span data-brand-subtitle>Owned by Georgia Stavrou | Coldwell Banker</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#listings">Listings</a>
+        <a href="#showings">Showings</a>
+        <a href="#process">Process</a>
+        <a href="#who">Who it serves</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="header-cta" href="#lead-form">Get a free rental plan</a>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Coldwell Banker rental specialist</p>
+          <h1>More qualified rental leads. Less vacancy drag.</h1>
+          <p class="marketline" data-market-line>
+            Serving Baltimore City, Baltimore County, Harford County, Cecil County, and Howard County.
+          </p>
+          <p class="lede">
+            Georgia Stavrou Rentals builds rental-focused pages that turn visitors into
+            booked showings, pre-qualified applicants, and steady occupancy for
+            landlords, sellers, and property managers across the Baltimore region.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#lead-form">Request a free rental plan</a>
+            <a class="button button-secondary" href="#services">See what is included</a>
+          </div>
+
+          <ul class="value-list" aria-label="Key benefits">
+            <li>Built for single-family, multifamily, and portfolio rentals</li>
+            <li>Clear messaging for landlords, tenants, and buyers</li>
+            <li>Search-friendly structure with fast follow-up prompts</li>
+          </ul>
+        </div>
+
+        <aside class="lead-card" id="lead-form" data-reveal>
+          <div class="card-badge">Free rental pricing snapshot</div>
+          <h2>Get more qualified inquiries from your rental traffic.</h2>
+          <p class="card-copy">
+            Tell us what you are trying to fill, market, or lease and we will
+            send a tailored rental lead strategy.
+          </p>
+
+          <form id="rentalLeadForm" novalidate>
+            <input
+              class="form-honeypot"
+              name="website"
+              type="text"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
+            <div class="field-grid">
+              <label>
+                <span>Full name</span>
+                <input name="name" type="text" placeholder="Jordan Lee" autocomplete="name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="jordan@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="field-grid">
+              <label>
+                <span>Phone</span>
+                <input
+                  name="phone"
+                  type="tel"
+                  placeholder="(410) 555-0148"
+                  autocomplete="tel"
+                  required
+                />
+              </label>
+              <label>
+                <span>What do you need?</span>
+                <select name="goal" required>
+                  <option value="" selected disabled>Select one</option>
+                  <option>Fill a vacancy</option>
+                  <option>Market a rental property</option>
+                  <option>Get more owner leads</option>
+                  <option>Find a rental home</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              <span>Property or neighborhood</span>
+              <input
+                name="location"
+                type="text"
+                placeholder="Downtown, 2-bed condo, or full address"
+                autocomplete="address-line1"
+                required
+              />
+            </label>
+
+            <div class="field-grid">
+              <label>
+                <span>Preferred showing date</span>
+                <input name="tourDate" type="date" required />
+              </label>
+              <label>
+                <span>Preferred showing time</span>
+                <input name="tourTime" type="time" step="1800" required />
+              </label>
+            </div>
+
+            <label>
+              <span>Tell us what you are trying to achieve</span>
+              <textarea
+                name="details"
+                rows="4"
+                placeholder="Example: We have a unit coming available next month and need more serious inquiries."
+                required
+              ></textarea>
+            </label>
+
+            <button class="button button-primary button-full" type="submit">
+              Send my rental request
+            </button>
+            <p class="form-note">
+              We review every request personally. No spam, no generic blast follow-up.
+            </p>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </aside>
+      </section>
+
+      <section class="signal-strip section" aria-label="Quick highlights">
+        <div class="signal" data-reveal>
+          <span class="signal-label">Lead quality</span>
+          <strong>Pre-qualified before it reaches your inbox</strong>
+        </div>
+        <div class="signal" data-reveal>
+          <span class="signal-label">Response speed</span>
+          <strong>Simple inquiry flow for fast follow-up</strong>
+        </div>
+        <div class="signal" data-reveal>
+          <span class="signal-label">Local search</span>
+          <strong>Built to support city and neighborhood intent</strong>
+        </div>
+        <div class="signal" data-reveal>
+          <span class="signal-label">Flexibility</span>
+          <strong>Works for landlord leads, tenant leads, or both</strong>
+        </div>
+      </section>
+
+      <section class="section listings-section" id="listings">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Featured rentals</p>
+          <h2>Give renters a real reason to inquire.</h2>
+          <p>
+            These cards can be swapped for your active inventory. Each listing
+            pre-fills the showing request form so visitors move faster.
+          </p>
+        </div>
+
+        <div class="listing-grid" data-listings>
+          <p class="dynamic-fallback">Enable JavaScript to load featured listings.</p>
+        </div>
+      </section>
+
+      <section class="section booking-section" id="showings">
+        <div class="booking-panel" data-reveal>
+          <div class="booking-copy">
+            <p class="eyebrow">Book a showing</p>
+            <h2>Pick a time and route it into the same lead flow.</h2>
+            <p>
+              If you already use Calendly or Cal.com, paste the link into the
+              config file and the button will open it. Otherwise, use the quick
+              slots below and send the request form.
+            </p>
+          </div>
+
+          <div class="slot-grid" data-showing-slots>
+            <p class="dynamic-fallback">Enable JavaScript to load showing slots.</p>
+          </div>
+
+          <div class="booking-actions">
+            <a class="button button-secondary" data-calendar-link href="#lead-form">
+              Use the request form
+            </a>
+            <a class="button button-primary" href="#lead-form">Continue to form</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">What the website sells for you</p>
+          <h2>A rental landing page that does the heavy lifting.</h2>
+          <p>
+            The site is structured around the questions that stop leads from
+            bouncing: what you offer, who it is for, and how to contact you
+            quickly.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-card" data-reveal>
+            <h3>Rental listing pages</h3>
+            <p>
+              Show the right details up front so serious prospects stay engaged
+              instead of leaving to compare generic listings.
+            </p>
+          </article>
+          <article class="info-card" data-reveal>
+            <h3>Lead qualification</h3>
+            <p>
+              Separate strong prospects from low-intent traffic with a form that
+              asks the right questions.
+            </p>
+          </article>
+          <article class="info-card" data-reveal>
+            <h3>Showings and follow-up</h3>
+            <p>
+              Turn inquiries into viewings with a clear next step, a strong CTA,
+              and simple post-submit guidance.
+            </p>
+          </article>
+          <article class="info-card" data-reveal>
+            <h3>Tenant screening signals</h3>
+            <p>
+              Communicate professionalism early so the right renters and owners
+              trust the process before they reach out.
+            </p>
+          </article>
+          <article class="info-card" data-reveal>
+            <h3>Local SEO structure</h3>
+            <p>
+              Pages are organized around neighborhoods, property types, and
+              rental intent to support search visibility.
+            </p>
+          </article>
+          <article class="info-card" data-reveal>
+            <h3>CRM-ready handoff</h3>
+            <p>
+              The form is easy to connect to an inbox, spreadsheet, or CRM when
+              you are ready to automate the pipeline.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">How it works</p>
+          <h2>Three steps from visitor to lead.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card" data-reveal>
+            <span>01</span>
+            <h3>Capture attention</h3>
+            <p>
+              The hero message speaks directly to rental pain points: vacancy,
+              slow inquiries, and low-quality traffic.
+            </p>
+          </article>
+          <article class="process-card" data-reveal>
+            <span>02</span>
+            <h3>Qualify interest</h3>
+            <p>
+              The form asks for the goal, location, and basic contact details so
+              you know what kind of lead is coming in.
+            </p>
+          </article>
+          <article class="process-card" data-reveal>
+            <span>03</span>
+            <h3>Convert faster</h3>
+            <p>
+              A clear next step moves the prospect from browsing to contacting
+              you with less friction.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="who">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Who it serves</p>
+          <h2>Built for the rental side of real estate in Baltimore.</h2>
+          <p>
+            Whether you manage a few homes or a larger portfolio, the page gives
+            you one place to route serious conversations.
+          </p>
+        </div>
+
+        <div class="split-grid">
+          <article class="split-card owner" data-reveal>
+            <p class="card-badge alt">For property owners</p>
+            <h3>Need more lease-up and management leads?</h3>
+            <ul>
+              <li>Attract landlords looking for help with vacancies</li>
+              <li>Capture inquiries for pricing, management, and screening</li>
+              <li>Position your business as the clear next step</li>
+            </ul>
+          </article>
+          <article class="split-card renter" data-reveal>
+            <p class="card-badge alt">For renters</p>
+            <h3>Need a better way to handle rental inquiries?</h3>
+            <ul>
+              <li>Let prospects ask about available homes without friction</li>
+              <li>Route questions to one clean contact form</li>
+              <li>Keep the path to a showing simple on mobile</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2>Common questions before launch.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item" data-reveal>
+            <summary>Can this work for a single rental property?</summary>
+            <p>
+              Yes. The site is designed to work for one unit, a handful of
+              properties, or a larger portfolio.
+            </p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Will this capture both owner and tenant leads?</summary>
+            <p>
+              Yes. The copy supports both paths, and the form can be tuned to the
+              lead type you want most.
+            </p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>Can the form connect to my inbox or CRM?</summary>
+            <p>
+              Yes. The front end is ready to wire into email, a spreadsheet, or a
+              CRM endpoint.
+            </p>
+          </details>
+          <details class="faq-item" data-reveal>
+            <summary>How quickly can I customize this?</summary>
+            <p>
+              Brand colors, contact details, and copy are isolated in the HTML and
+              CSS so the site is easy to adapt.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="cta-banner section" data-reveal>
+        <div>
+          <p class="eyebrow">Ready to turn traffic into leads?</p>
+          <h2>Give visitors one clear path to contact you.</h2>
+        </div>
+        <a class="button button-primary" href="#lead-form">Start with the form</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <strong data-brand-name>Georgia Stavrou Rentals</strong>
+        <p class="footer-note">
+          Owned by Georgia Stavrou | Coldwell Banker | Rental-focused websites that turn attention into inquiries.
+        </p>
+      </div>
+      <div class="footer-contact">
+        <span class="footer-label">Contact</span>
+        <a data-contact-email href="mailto:georgia07.realtor@gmail.com">georgia07.realtor@gmail.com</a>
+        <a data-contact-phone href="tel:+14105550148">(410) 555-0148</a>
+        <a class="footer-website" data-contact-website href="https://georgiastavrourentals.com">
+          georgiastavrourentals.com
+        </a>
+      </div>
+      <div class="footer-service">
+        <span class="footer-label">Service area</span>
+        <p data-service-area>
+          Baltimore City, Baltimore County, Harford County, Cecil County, and Howard County
+        </p>
+      </div>
+      <p class="footer-note">
+        From first inquiry to booked showing, the flow stays focused on qualified rental conversations.
+      </p>
+    </footer>
+  </body>
+</html>
